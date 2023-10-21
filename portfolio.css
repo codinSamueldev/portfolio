@@ -1,0 +1,73 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* Style navigation bar. */
+nav{
+    width: 100vw;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background: #687EFF;
+    z-index: 999;
+}
+
+nav *{
+    display: inline;
+}
+
+nav ul{
+    display: inline-flex;
+    gap: 1rem;
+}
+
+nav ul li a{
+    padding-right: 1rem;
+    text-decoration: none;
+    color: #fefbec;
+}
+
+/* Style introduction section. */
+.introduction{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #80B3FF;
+}
+
+.introduction h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Work section styles */
+#work{
+    background: #98E4FF;
+}
+
+/* Contact section styles */
+#contact{
+    background: #B6FFFA;
+}
+
+/* Footer section styles */
+footer{
+    background: #FAF2D3;
+}

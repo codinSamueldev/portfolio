@@ -11,6 +11,10 @@ body{
 }
 
 /* Style navigation bar. */
+nav *{
+    display: inline;
+}
+
 nav{
     width: 100vw;
     height: 3rem;
@@ -25,19 +29,25 @@ nav{
     z-index: 999;
 }
 
-nav *{
-    display: inline;
-}
 
 nav ul{
     display: inline-flex;
     gap: 1rem;
 }
 
+nav ul:last-of-type{
+    margin-right: 0.5rem;
+}
+
 nav ul li a{
-    padding-right: 1rem;
+    display: block;
+    padding: 1rem;
     text-decoration: none;
     color: #fefbec;
+}
+
+nav ul li a:hover{
+    background-color: #19184e;
 }
 
 /* Style introduction section. */
@@ -48,23 +58,48 @@ nav ul li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #80B3FF;
+    background: radial-gradient(circle, rgba(239,245,255,1) 0%, rgba(128,179,255,1) 40%);
 }
 
 .introduction h1{
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
+    color: #4b4b83;
+}
+
+.introduction i{
+    color: #440167;
 }
 
 /* Work section styles */
 #work{
-    background: #98E4FF;
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #b3ff80;
+}
+
+#work h2{
+    max-width: 40rem;
+    font-size: 1.8rem;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #440167;
+}
+
+#work .projects-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#work .projects-flex .test{
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Contact section styles */
 #contact{
-    background: #B6FFFA;
+    background: #ff80b3;
 }
 
 /* Footer section styles */

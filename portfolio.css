@@ -92,8 +92,20 @@ nav ul li a:hover{
     justify-content: center;
 }
 
-#work .projects-flex .test{
+#work .projects-flex a{
+    margin: 1rem;
+    text-decoration: none;
+    background: lightblue;
+}
+
+#work .projects-flex .project-image{
+    width: 25vw;
+    height: auto;
+}
+
+.project-image img{
     width: 100%;
+    height: 20rem;
     object-fit: cover;
 }
 

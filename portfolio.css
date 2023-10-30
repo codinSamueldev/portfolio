@@ -70,6 +70,7 @@ nav ul li a:hover{
 
 .introduction i{
     color: #440167;
+    font-size: 1.5rem;
 }
 
 /* Work section styles */
@@ -84,6 +85,7 @@ nav ul li a:hover{
     font-size: 1.8rem;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid #fff;
+    color: #4b4b83;
 }
 
 #work .projects-flex{
@@ -97,6 +99,12 @@ nav ul li a:hover{
     text-decoration: none;
     background: rgba(128,179,255,1);
     color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+#work .projects-flex a:hover{
+    transform: scale(1.1);
+    overflow: hidden;
 }
 
 #work .projects-flex a p{
@@ -134,10 +142,15 @@ nav ul li a:hover{
 
 #contact a{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 2rem;
     display: inline-block;
     padding: 1rem;
     color: #fff;
+    transition: transform 0.3s ease-out;
+}
+
+#contact a:hover{
+    transform: translateY(8px);
 }
 
 /* Footer section styles */
